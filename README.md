@@ -50,9 +50,8 @@ Modeling
                 f(X) = Y
                 ARMA,HW_additive_seasoning,fb_prophet,Average ==> X
                 Adjusted_Sales ==> Y
-8) 
-
-
+    
+    b) Train regression prediction table using linear regression and predict forecast fit values and save the model as pickles.
 
 Masterrun
 ------------------
