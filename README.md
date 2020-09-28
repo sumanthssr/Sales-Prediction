@@ -55,3 +55,11 @@ Modeling
 
 Masterrun
 ------------------
+1) Load store lift,item lift, promo data
+2) Create the regression predict table given the predict variables from forecast start date to forecast end date i.e 21 days.
+3) First, create the prediction values from each individual base learner.
+4) ARMA model prediction steps : Predict 21 days sales forecast using linear regression model name it as regression_fit and now predict 21 days residuals using arma model name it as arma_residuals,finally add arma_residuals and regression_fit to get final_forecast_fit.
+5) Similarily predict forecast fit using hw_additive_seasonality,fb_prophet,average_model.
+6) Combine all base learner models results and create a new table with all results of base learners and predict the final forecast using ensemble model by loading the ensmeble model pickle saved in prerun.
+7) In the last step calibrate forecasted sales using item lift,store lift,promo lift if applicable and save the results.
+    
