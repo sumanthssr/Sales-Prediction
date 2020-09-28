@@ -29,6 +29,7 @@ Modeling
 4) Filter regression fit variables from list of columns of master data.
     
     Steps involved in ARMA modelling
+    --------------------------------------------
     a) create regression fit table with regression_fit_variables as column names.
     b) create linear regression model with input as regression fit table.
     c) predict fitted values using above linear regression model for whole data.
@@ -41,6 +42,7 @@ Modeling
 7) Create stacking ensemble forecast model
 
     Steps involved in stacking ensemble model building
+    --------------------------------------------------
     a) Create the regression prediction table to be used for the meta regression in the ensemble model.
     Example :   ARMA,HW_additive_seasoning,fb_prophet,Average,Adjusted_Sales
                 10,11,10.5,12,11.3
@@ -48,11 +50,7 @@ Modeling
                 f(X) = Y
                 ARMA,HW_additive_seasoning,fb_prophet,Average ==> X
                 Adjusted_Sales ==> Y
-    
-
-
-
-
+8) 
 
 
 
